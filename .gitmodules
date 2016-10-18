@@ -1,0 +1,3 @@
+[submodule "check_rbl"]
+	path = check_rbl
+	url = https://github.com/matteocorti/check_rbl.git
