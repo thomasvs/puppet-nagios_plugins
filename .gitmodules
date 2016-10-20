@@ -1,3 +1,6 @@
 [submodule "check_rbl"]
 	path = check_rbl
 	url = https://github.com/matteocorti/check_rbl.git
+[submodule "check_logfiles"]
+	path = check_logfiles
+	url = https://github.com/lausser/check_logfiles.git
