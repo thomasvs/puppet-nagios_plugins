@@ -4,6 +4,8 @@ class nagios_plugins::check::rbl::install (
   # these are taken from upstream check_rbl.ini
   # at commit 2bcc800042e81e2d732d09ebc8cedd6d8a16849e
   # and removing nomorefunn and spamcannibal again
+  # then disabled servers timing out often:
+  #  cdl.anti-spam.org.cn, short.rbl.jp, dnsbl.anticaptcha.net)
   $default_servers = [
     'cbl.abuseat.org',
     'bl.deadbeef.com',
@@ -39,7 +41,7 @@ class nagios_plugins::check::rbl::install (
     'sbl-xbl.spamhaus.org',
     'bl.technovision.dk',
     'b.barracudacentral.org',
-    'cdl.anti-spam.org.cn',
+#   'cdl.anti-spam.org.cn',
     'dnsbl.antispam.or.id',
     'dnsbl.inps.de',
     'drone.abuse.ch',
@@ -53,7 +55,7 @@ class nagios_plugins::check::rbl::install (
     'rbl.spamlab.com',
     'rbl.suresupport.com',
     'relays.bl.kunden.de',
-    'short.rbl.jp',
+#   'short.rbl.jp',
     'smtp.dnsbl.sorbs.net',
     'socks.dnsbl.sorbs.net',
     'spam.abuse.ch',
@@ -95,7 +97,7 @@ class nagios_plugins::check::rbl::install (
     't3direct.dnsbl.net.au',
     'ubl.lashback.com',
     'all.s5h.net',
-    'dnsbl.anticaptcha.net',
+#   'dnsbl.anticaptcha.net',
     'dnsbl.dronebl.org',
     'dnsbl.spfbl.net',
     'ips.backscatterer.org',
