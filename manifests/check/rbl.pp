@@ -12,8 +12,11 @@ define nagios_plugins::check::rbl (
   include ::nagios::client
   include ::nagios_plugins::check::rbl::install
 
+  $host_name = $nagios::client::host_name
+
   nagios::service { "check_rbl_${title}":
     ensure                   => $ensure,
+    host_name                => $host_name,
     check_command            => "check_rbl!${title}",
     service_description      => "rbl ${title}",
     servicegroups            => $servicegroups,
