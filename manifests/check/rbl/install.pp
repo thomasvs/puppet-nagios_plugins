@@ -71,7 +71,7 @@ class nagios_plugins::check::rbl::install (
     'zombie.dnsbl.sorbs.net',
     'blackholes.five-ten-sg.com',
     'blacklist.woody.ch',
-    'bl.emailbasura.org',
+#   'bl.emailbasura.org', # offline since 2019-10-30
     'bogons.cymru.com',
     'combined.abuse.ch',
     'duinv.aupads.org',
@@ -87,7 +87,7 @@ class nagios_plugins::check::rbl::install (
     'proxy.bl.gweep.ca',
     'proxy.block.transip.nl',
     'rbl.inter.net',
-    'rbl.megarbl.net',
+#   'rbl.megarbl.net', # offline since 2016
     'rdts.dnsbl.net.au',
     'relays.bl.gweep.ca',
     'residential.block.transip.nl',
