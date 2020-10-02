@@ -3,7 +3,7 @@ class nagios_plugins::check::rbl::install (
 ) {
   # these are taken from upstream check_rbl.ini
   # at commit 2bcc800042e81e2d732d09ebc8cedd6d8a16849e
-  # and removing nomorefunn and spamcannibal again
+  # and removing nomorefunn and spamcannibal and megarbl again
   # then disabled servers timing out often:
   #  cdl.anti-spam.org.cn, short.rbl.jp, dnsbl.anticaptcha.net)
   $default_servers = [
@@ -75,7 +75,7 @@ class nagios_plugins::check::rbl::install (
     'bogons.cymru.com',
     'combined.abuse.ch',
     'duinv.aupads.org',
-    'dynip.rothen.com',
+#    'dynip.rothen.com', # giving errors since 2020-09-30
     'ohps.dnsbl.net.au',
     'omrs.dnsbl.net.au',
     'orvedb.aupads.org',
