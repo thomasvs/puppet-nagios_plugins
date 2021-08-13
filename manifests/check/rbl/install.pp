@@ -3,7 +3,7 @@ class nagios_plugins::check::rbl::install (
 ) {
   # these are taken from upstream check_rbl.ini
   # at commit 2bcc800042e81e2d732d09ebc8cedd6d8a16849e
-  # and removing nomorefunn and spamcannibal and megarbl again
+  # and removing nomorefunn and spamcannibal and megarbl and technovision again
   # then disabled servers timing out often:
   #  cdl.anti-spam.org.cn, short.rbl.jp, dnsbl.anticaptcha.net)
   $default_servers = [
@@ -39,7 +39,7 @@ class nagios_plugins::check::rbl::install (
     'hil.habeas.com',
     'rbl.schulte.org',
     'sbl-xbl.spamhaus.org',
-    'bl.technovision.dk',
+#    'bl.technovision.dk',
     'b.barracudacentral.org',
 #   'cdl.anti-spam.org.cn',
     'dnsbl.antispam.or.id',
