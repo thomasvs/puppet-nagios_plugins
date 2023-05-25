@@ -60,7 +60,7 @@ class nagios_plugins::check::rbl::install (
     'socks.dnsbl.sorbs.net',
     'spam.abuse.ch',
     'spamrbl.imp.ch',
-    'tr.countries.nerd.dk',
+#    'tr.countries.nerd.dk',
     'unsure.nether.net',
     'virbl.bit.nl',
     'virus.rbl.jp',
