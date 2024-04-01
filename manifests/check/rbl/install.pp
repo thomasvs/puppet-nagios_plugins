@@ -9,7 +9,7 @@ class nagios_plugins::check::rbl::install (
   $default_servers = [
     'cbl.abuseat.org',
     'bl.deadbeef.com',
-    'spamtrap.drbl.drand.net',
+#    'spamtrap.drbl.drand.net',
     'spamsources.fabel.dk',
     '0spam.fusionzero.com',
     'mail-abuse.blacklist.jippg.org',
